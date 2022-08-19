@@ -67,6 +67,11 @@
 			<version>1.6.9</version>
 		</dependency>
 		
+		<dependency>
+	<groupId>org.postgresql</groupId>
+	<artifactId>postgresql</artifactId>
+</dependency> 
+		
 		<!-- Configuração do JUnit -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

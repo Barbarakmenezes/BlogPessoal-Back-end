@@ -1,4 +1,4 @@
-package org.generation.blogPessoal.secutiry;
+package org.generation.blogPessoal.security;
 
 import java.util.Optional;
 
@@ -12,8 +12,9 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
-@Service 
-public class UserDetailsServiceImpl  implements UserDetailsService {
+
+@Service
+public class UserDetailsServiceImpl implements UserDetailsService {
 	
 	@Autowired
 	private UsuarioRepository usuarioRepository;
@@ -29,5 +30,3 @@ public class UserDetailsServiceImpl  implements UserDetailsService {
 			throw new ResponseStatusException(HttpStatus.FORBIDDEN);
 	}
 }
-
-

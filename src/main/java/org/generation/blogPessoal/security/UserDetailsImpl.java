@@ -1,6 +1,4 @@
-package org.generation.blogPessoal.secutiry;
-
-
+package org.generation.blogPessoal.security;
 import java.util.Collection;
 import java.util.List;
 
@@ -10,8 +8,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 
 
-public class UserDetailsImpl  implements UserDetails {
-	
+public class UserDetailsImpl implements UserDetails{
+
 private static final long serialVersionUID =1L;
 	
 	private String userName;
@@ -67,7 +65,5 @@ private static final long serialVersionUID =1L;
 		
 		return true;
 	}
-
-	
 
 }

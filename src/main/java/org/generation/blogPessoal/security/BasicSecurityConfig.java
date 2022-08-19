@@ -1,4 +1,4 @@
-package org.generation.blogPessoal.secutiry;
+package org.generation.blogPessoal.security;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -45,5 +45,6 @@ public class BasicSecurityConfig {
         return http.build();
 
     }
+
 
 }

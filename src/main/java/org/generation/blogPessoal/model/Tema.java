@@ -24,6 +24,9 @@ public class Tema {
      @Id
      @GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id ;
+     
+     @NotNull
+  	private String descricao;
 	
      @OneToMany(mappedBy="tema", cascade= CascadeType.ALL) 
  	@JsonIgnoreProperties("tema")
@@ -53,8 +56,7 @@ public class Tema {
 		this.descricao = descricao;
 	}
 
-	@NotNull
- 	private String descricao;
+	
  	
  
  	
